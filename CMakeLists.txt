@@ -15,7 +15,7 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
 # Configura a placa alvo da compilação
-set(PICO_BOARD pico)
+set(PICO_BOARD pico_w)
 
 # Inicializa o SDK da raspberry pi pico 
 pico_sdk_init()
@@ -27,7 +27,7 @@ add_executable(blink
         )
 
 # Define as bibliotecas necessárias para que o programa seja linkado
-target_link_libraries(blink pico_stdlib)
+target_link_libraries(blink pico_cyw43_arch_none pico_stdlib)
 
 # Cria os arquivos binários no forma uf2 após a compilação
 pico_add_extra_outputs(blink)
