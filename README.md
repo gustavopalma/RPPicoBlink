@@ -20,3 +20,5 @@ cd build
 cmake ..
 make
 ```
+## Arquivos de Simulação para simulador WokWi
+O Projeto é compatível com a extensão do simulador WokWi, para mais informações clique [aqui](https://docs.wokwi.com/pt-BR/vscode/getting-started)
